@@ -11,3 +11,22 @@ const storedCity = JSON.parse(storedCityString);
 
 // EMPTY ARRAY TO STORE SEARCH HISTORY //
 let prevSearches = [];
+
+if (storedCity) {
+    storedCity.forEach((city) => {
+      if (!prevSearches.includes(city)) {
+        prevSearches.push(city);
+        const prevSearchBtn = document.createElement("button");
+        prevSearchBtn.innerText = city;
+        prevSearchBtn.classList.add("search-history");
+        searchHistory.prepend(prevSearchBtn);
+  
+        function handleSearchBtnClick(e) {
+          const cityName = e.target.innerText;
+          searchInput.value = cityName;
+          displayWeather();
+        }
+        prevSearchBtn.addEventListener("click", handleSearchBtnClick);
+      }
+    });
+  }
