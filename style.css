@@ -44,6 +44,11 @@ button.search {
     color: #fff;
 }
 
+button.search:hover {
+    background-color: #E63946;
+    cursor: pointer;
+}
+
 hr {
     margin-bottom: 10px;
 }
@@ -52,8 +57,14 @@ button.search-history {
     background-color: #A8DADC;
     margin-bottom: 10px;
     padding: 10px;
-    color: #fff;
+    color: #1D3557;
     border: 2px solid #1D3557;
+}
+
+button.search-history:hover {
+    background-color: #E63946;
+    color: #fff;
+    cursor: pointer;
 }
 
 h2 {
@@ -79,16 +90,20 @@ main {
     padding: 10px;
     margin-bottom: 25px;
     display: none;
+    background-color: #1D3557;
 }
 
-/* 5 DAY FORECAST */
 .today-weather h2 {
     margin-bottom: 10px;
+    color: #fff;
 }
 
 p {
     padding: 10px 0;
+    color: #fff;
 }
+
+/* 5 DAY FORECAST */
 
 .forecast {
     display: flex;
@@ -110,4 +125,3 @@ p {
 .day h3 {
     margin-top: 5px;
 }
-
