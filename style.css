@@ -66,3 +66,48 @@ aside {
     min-height: 100%;
     overflow: hidden;
 }
+
+/* BODY */
+main {
+    flex-grow: 1;
+    padding: 20px;
+    width: 70vw;
+}
+
+.today-weather {
+    border: 2px solid #1D3557;
+    padding: 10px;
+    margin-bottom: 25px;
+    display: none;
+}
+
+/* 5 DAY FORECAST */
+.today-weather h2 {
+    margin-bottom: 10px;
+}
+
+p {
+    padding: 10px 0;
+}
+
+.forecast {
+    display: flex;
+    gap: 1rem;
+}
+
+.forecast-title {
+    display: none;
+    padding-bottom: 10px;
+}
+
+.day {
+    background-color: #1D3557;
+    padding-right: 43px;
+    padding-left: 5px;
+    color: #fff;
+}
+
+.day h3 {
+    margin-top: 5px;
+}
+
